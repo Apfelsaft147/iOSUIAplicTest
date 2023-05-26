@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blur"
+    tools:context=".UITestActivity">
+
+    <LinearLayout
+        android:layout_marginTop="5sp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#83000000"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20sp"
+                android:layout_marginTop="20sp"
+                android:adjustViewBounds="false"
+                android:backgroundTint="#403E3E3E"
+                android:outlineAmbientShadowColor="#83000000"
+                android:outlineSpotShadowColor="#83000000"
+                android:src="@drawable/arrow_left1"
+                android:tint="@color/white"
+                app:borderWidth="0dp"
+                app:rippleColor="@color/white"
+                app:tint="@color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="90sp"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="476sp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40sp"
+                android:layout_gravity="center">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="240sp"
+                    android:layout_height="300sp"
+                    app:cardBackgroundColor="#B7323232"
+                    app:cardCornerRadius="20sp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="New User"
+                        android:layout_marginTop="40sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="20sp"/>
+
+                    <ImageView
+                        android:layout_width="120sp"
+                        android:layout_height="120sp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/qrcode"/>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="Share this Account"
+                        android:layout_marginStart="10sp"
+                        android:layout_marginEnd="10sp"
+                        android:layout_marginBottom="10sp"
+                        android:textColor="@color/black"
+                        android:layout_gravity="bottom|center_horizontal"
+                        app:backgroundTint="#FFFFFF"
+                        app:cornerRadius="40sp" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="-340sp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/account_tie"
+                    app:backgroundTint="#FFFFFF"
+                    android:clickable="false"
+                    app:borderWidth="4dp"
+                    app:fabCustomSize="80sp"
+                    app:maxImageSize="68sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
